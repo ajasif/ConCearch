@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+
+    tools:context="group8.tcss450.uw.edu.consearch.activities.LoginActivity">
+
+    <ImageView
+        android:contentDescription="@string/image_content_description"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/guitar"
+        android:scaleType="fitXY"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/title"
+        android:layout_gravity="center_horizontal"
+        android:textSize="65sp"
+        android:typeface="serif"
+        android:textStyle="italic|bold"
+        android:textColor="@color/textColor"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <EditText
+            android:id="@+id/usernameField"
+            android:layout_width="@dimen/loginGroup"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:hint="@string/usernameHint"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textSize="@dimen/registerText"
+            android:background="@drawable/customborder" />
+
+        <EditText
+            android:id="@+id/passwordField"
+            android:layout_width="@dimen/loginGroup"
+            android:layout_height="wrap_content"
+            android:hint="@string/passwordHint"
+            android:inputType="textPassword"
+            android:textSize="@dimen/registerText"
+            android:background="@drawable/customborder" />
+        <Button
+            android:id="@+id/signInButton"
+            android:layout_width="@dimen/loginGroup"
+            android:layout_height="50dp"
+            android:onClick="clickSignIn"
+            android:text="@string/sign_in" />
+        <Button
+            android:id="@+id/createAccountButton"
+            android:layout_width="@dimen/loginGroup"
+            android:layout_height="50dp"
+            android:onClick="clickCreateAccount"
+            android:text="@string/register"/>
+    </LinearLayout>
+
+</FrameLayout>

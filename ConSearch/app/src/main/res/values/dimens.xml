@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="loginGroup">250dp</dimen>
+    <dimen name="registerText">20sp</dimen>
+</resources>

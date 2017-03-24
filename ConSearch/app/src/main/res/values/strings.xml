@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">ConSearch</string>
+    <string name="artist_radio">Artist</string>
+    <string name="venue_radio">Venue</string>
+    <string name="location_radio">Location</string>
+    <string name="search_textView">Search:</string>
+    <string name="search_button">Search</string>
+    <string name="search_hint">Enter Artist Name or Change Search Type…</string>
+    <string name="search_artist_hint">Enter Artist Name…</string>
+    <string name="search_venue_hint">Enter Venue Name…</string>
+    <string name="search_location_hint">Enter Zip Code…</string>
+    <string name="search_no_results">No Results Found.</string>
+    <string name="bio_no_results">No bio available for this artist.</string>
+    <string name="name_placeholder">Name</string>
+    <string name="location_placeholder">Location</string>
+    <string name="image_content_description">Background Image</string>
+    <string name="results_details">Details</string>
+    <string name="event_venue_lead">Event being held at: </string>
+    <string name="event_website_lead">Event Website</string>
+    <string name="event_artist_list">Artist List</string>
+    <string name="similar_artists_button">Similar Artists</string>
+    <string name="artist_event_button">Check out upcoming events!</string>
+    <string name="back_to_artist_button">Go Back</string>
+    <string name="bio_button">Artist Bio</string>
+    <string name="venue_event_list">Events at This Venue</string>
+    <string name="phone_not_available">No Phone Number Available</string>
+
+    <string name="title">ConSearch</string>
+    <string name="usernameHint">Username…</string>
+    <string name="passwordHint">Password…</string>
+    <string name="usernameTitle">Username: </string>
+    <string name="passwordTitle">Password: </string>
+    <string name="passwordConfirmTitle">Confirm Password: </string>
+    <string name="confirmPasswordHint">Confirm Password:</string>
+    <string name="sign_in">Sign In</string>
+    <string name="register">Create Account</string>
+    <string name="registerTitle">Registration Details</string>
+
+    <string name="preferenceTitle">Concert Preferences</string>
+    <string name="artist">Artist:</string>
+    <string name="venue">Enter Venue:</string>
+    <string name="location">Enter Zip Code:</string>
+
+    <string name="hello">Hello, </string>
+    <string name="saveButton">Save</string>
+    <string name="profileDescription">Saved details will populate ConSearch on load.</string>
+
+    <string name="ok">Ok</string>
+    <string name="choose_venue">Confirm Venue</string>
+    <string name="choose_artist">Confirm Artist</string>
+
+    <string name="places_connection_failed">Google Places Connection Failed.</string>
+
+    <string name="CREATE_ARTIST_SQL">
+        CREATE TABLE IF NOT EXISTS Artists
+        (id INTEGER PRIMARY KEY, name TEXT, onTour TEXT)
+    </string>
+
+    <string name="CREATE_VENUE_SQL">
+        CREATE TABLE IF NOT EXISTS Venue
+        (id INTEGER PRIMARY KEY, name TEXT, address TEXT, phone TEXT, website TEXT)
+    </string>
+
+    <string name="CREATE_EVENT_SQL">
+        CREATE TABLE IF NOT EXISTS Event
+        (id INTEGER PRIMARY KEY, name TEXT, address TEXT, phone TEXT, website TEXT)
+    </string>
+
+    <string name="DROP_ARTIST_SQL">
+        DROP TABLE IF EXISTS Artists
+    </string>
+
+    <string name="DROP_VENUE_SQL">
+        DROP TABLE IF EXISTS Venue
+    </string>
+
+    <string-array name="VENUE_DB_COLUMN_NAMES">
+        <item>id</item>
+        <item>name</item>
+    </string-array>
+
+    <string-array name="ARTIST_DB_COLUMN_NAMES">
+        <item>id</item>
+        <item>name</item>
+        <item>address</item>
+        <item>phone</item>
+        <item>website</item>
+    </string-array>
+
+    <string name="DB_NAME">ARTIST_VENUE.db</string>
+    <string name="ARTIST_TABLE_NAME">Artists</string>
+    <string name="VENUE_TABLE_NAME">Venues</string>
+</resources>

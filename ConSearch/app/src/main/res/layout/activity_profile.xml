@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/guitar"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_profile"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="group8.tcss450.uw.edu.consearch.activities.ProfileActivity">
+
+        <TextView
+            android:id="@+id/user_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/textColor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/preferenceTitle"
+            android:textSize="@dimen/registerText"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:textColor="@color/textColor"/>
+
+        <LinearLayout
+            android:id="@+id/artist_block"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/profile_artist_set"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/profile_artist"
+                    android:layout_width="@dimen/loginGroup"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/registerText"
+                    android:hint="Artist"
+                    android:inputType="text"
+                    android:layout_marginBottom="@dimen/activity_vertical_margin"
+                    android:background="@drawable/customborder">
+                </EditText>
+
+                <Button
+                    android:id="@+id/profile_artist_button"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="+"
+                    android:onClick="clickArtistAdd"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/saveButton"
+            android:onClick="clickSave"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profileDescription"
+            android:textSize="@dimen/registerText"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:textColor="@color/textColor"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="text_color_black">#000000</color>
+    <color name="search_button_background">#800000</color>
+    <color name="text_color_white">#FFFFFF</color>
+    <color name="hyperlink_blue">#0000FF</color>
+    <color name="phone_orange">#FFA500</color>
+    <color name="textColor">#FFFFFF</color>
+    <color name="border">#000000</color>
+</resources>

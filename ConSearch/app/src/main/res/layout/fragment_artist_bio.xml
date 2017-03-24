@@ -1,0 +1,17 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context="group8.tcss450.uw.edu.consearch.fragments.artistFragments.ArtistBioFragment">
+
+        <TextView
+            android:id="@+id/artist_bio_textView"
+            android:textColor="@color/text_color_black"
+            android:textSize="15sp"
+            android:text="@string/bio_no_results"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColorLink="@color/hyperlink_blue"/>
+
+</ScrollView>

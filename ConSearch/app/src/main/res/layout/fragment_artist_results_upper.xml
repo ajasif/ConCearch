@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             tools:context="group8.tcss450.uw.edu.consearch.fragments.artistFragments.ArtistResultsUpperFragment">
+
+    <TextView
+        android:id="@+id/artist_name_textView"
+        android:text="@string/name_placeholder"
+        android:textStyle="bold|italic"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        android:textColor="@color/text_color_black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/artist_imageView"
+            android:contentDescription="@string/image_content_description"
+            android:layout_width="200dp"
+            android:layout_height="200dp" />
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="50dp"
+            android:paddingLeft="50dp"
+            android:paddingEnd="0dp"
+            android:paddingRight="0dp"
+            android:textAlignment="center"
+            android:layout_gravity="bottom">
+
+            <Button
+                android:id="@+id/artist_bio_button"
+                android:background="@android:color/transparent"
+                android:text="@string/bio_button"
+                android:textColor="@color/text_color_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/artist_events_button"
+                android:background="@android:color/transparent"
+                android:text="@string/artist_event_button"
+                android:textColor="@color/text_color_black"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/similar_artists_button"
+                android:text="@string/similar_artists_button"
+                android:textColor="@color/text_color_black"
+                android:background="@android:color/transparent"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

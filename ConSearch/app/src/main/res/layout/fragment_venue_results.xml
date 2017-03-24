@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    tools:context="group8.tcss450.uw.edu.consearch.fragments.venueFragments.VenueResultsFragment">
+
+    <TextView
+        android:id="@+id/venue_name_textView"
+        android:text="@string/app_name"
+        android:background="@android:color/transparent"
+        android:textColor="@color/text_color_white"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/venue_address_textView"
+        android:background="@android:color/transparent"
+        android:textSize="15sp"
+        android:textColor="@color/text_color_black"
+        android:autoLink="map"
+        android:textColorLink="@color/hyperlink_blue"
+        android:paddingTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/venue_phone_textView"
+        android:textSize="15sp"
+        android:autoLink="phone"
+        android:textColorLink="@color/hyperlink_blue"
+        android:textColor="@color/text_color_black"
+        android:paddingTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/venue_website_textView"
+        android:textSize="15sp"
+        android:textColorLink="@color/hyperlink_blue"
+        android:autoLink="web"
+        android:paddingTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="@string/venue_event_list"
+        android:textSize="25sp"
+        android:textColor="@color/text_color_white"
+        android:textAlignment="center"
+        android:paddingTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
